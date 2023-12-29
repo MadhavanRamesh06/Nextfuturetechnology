@@ -1,0 +1,53 @@
+
+.page_404{ 
+    padding:40px 0; 
+    background:#fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.page_404  img{ 
+    width:100%;
+}
+
+.four_zero_four_bg{
+ 
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+    font-size:80px;
+    margin: 20px 0;
+ }
+ 
+  .four_zero_four_bg h3{
+	font-size:80px;
+    margin: 20px 0;
+}
+			 
+.link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #20b7af;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.contant_box_404{ 
+    margin-top:-50px;
+}
