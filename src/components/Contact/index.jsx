@@ -80,8 +80,8 @@ const Contact = () => {
                         <ContactInfoDiv>
                             <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:+918072022595"><FaMobileAlt/> +91 8072022595 </ContactInfo>
                             <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:04362297330"> <FaPhoneAlt/> 04362 297330 </ContactInfo>
-                            <WhatsAppBtn target='_blank' href='https://api.whatsapp.com/send/?phone=918072022595'> <FaWhatsapp /> India</WhatsAppBtn>
                         </ContactInfoDiv>
+                        <WhatsAppBtn target='_blank' href='https://api.whatsapp.com/send/?phone=918072022595'> <FaWhatsapp /> India</WhatsAppBtn>
 
                         <ContactInfoDiv style={{ cursor: 'pointer' }} target='_blank' href='https://www.google.com/maps/place/Al+Shaiba+Building+-+2nd+Floor,+Dubai+Outsource+Zone+-+Manama+St+-+Academic+City+-+Dubai/@25.1270534,55.4236481,17z/data=!4m15!1m8!3m7!1s0x3e5f63bdea4f9971:0x4c2543ce56a1636e!2sAl+Shaiba+Building+-+2nd+Floor,+Dubai+Outsource+Zone+-+Manama+St+-+Academic+City+-+Dubai!3b1!8m2!3d25.1270534!4d55.426223!16s%2Fg%2F12vskgyw6!3m5!1s0x3e5f63bdea4f9971:0x4c2543ce56a1636e!8m2!3d25.1270534!4d55.426223!16s%2Fg%2F12vskgyw6'>
                             <ContactHeaderDiv>

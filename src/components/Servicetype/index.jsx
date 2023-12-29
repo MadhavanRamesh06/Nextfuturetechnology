@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button } from '../ButtonElements'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements'
+import { STypeContainer, STypeWrapper, STypeRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './ServiceTypeElements'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, description1, buttonLabel, alt, img, primary, dark, dark2 ,description2}) => {
+const SType = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, description1, buttonLabel, alt, img, primary, dark, dark2 ,description2}) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
-        <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+      <STypeContainer lightBg={lightBg} id={id}>
+        <STypeWrapper>
+          <STypeRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
@@ -35,11 +35,11 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
                 <Img src={img} alt={alt}/>
               </ImgWrap>
             </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+          </STypeRow>
+        </STypeWrapper>
+      </STypeContainer>
     </>
   )
 }
 
-export default Info
+export default SType

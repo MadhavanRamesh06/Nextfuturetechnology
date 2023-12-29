@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const InfoContainer = styled.div`
+export const STypeContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
@@ -8,10 +8,10 @@ export const InfoContainer = styled.div`
     padding: 100px 0;
   }
 `
-export const InfoWrapper = styled.div`
+export const STypeWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 650px;
   width: 100% auto;
   max-width: 1100px;
   margin-right: auto;
@@ -19,7 +19,7 @@ export const InfoWrapper = styled.div`
   padding: 0 24px;
   justify-content: center;
 `
-export const InfoRow = styled.div`
+export const STypeRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -55,8 +55,8 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
-  margin-bottom: 24px;
-  font-size: 48px;
+  margin: 24px 0;
+  font-size: 30px;
   line-height: 1.1;
   font-weight: 600px;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
@@ -69,7 +69,7 @@ export const Subtitle  = styled.p`
   max-width: 440px;
   margin:15px 0;
   font-size: 15px;
-  line-height: 24px;
+  line-height: 22px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 export const BtnWrap = styled.div`
