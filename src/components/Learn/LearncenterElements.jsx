@@ -48,11 +48,9 @@ export const LCard = styled.div`
   transition: width 0.2s ease-in-out;
 
   &:hover {
-    transform: scale(1.5);
-    position:relative;
-    left:0;
+    transform: scale(1.1);
     transition: all 0.2s ease-in-out;
-    cursor:pointer;
+    cursor:pointer
   }
 `
 export const LIcon = styled.img`
@@ -89,9 +87,4 @@ export const LP = styled.p`
 
 export const Lspan = styled.div`
 
-`
-export const LInfo =styled.div`
-      display:none;
-      padding: 20px;
-      background-color: #000;
 `

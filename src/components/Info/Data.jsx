@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: 'Tailor Made',
   headline: 'Custom made softwares',
   description: 'Looking to build fast and reduce your time to market? Together we can find the core set of features to gather user information and iteratively create the best possible product',
-  buttonLabel: 'Learn More',
+  buttonLabel: 'For more details',
   imgStart: true,
   img: '/images/grow.svg',
   alt: 'Grow',

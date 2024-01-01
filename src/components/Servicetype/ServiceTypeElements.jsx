@@ -4,8 +4,12 @@ export const STypeContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
-  @media screen and  (max-width: 768px) {
-    padding: 100px 0;
+  @media screen and (max-width: 768px) {
+    height: 1100px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 1000px;
   }
 `
 export const STypeWrapper = styled.div`

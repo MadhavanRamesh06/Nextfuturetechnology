@@ -65,7 +65,7 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
             {isOpen && (
             <NavX>
-              <NavLinks onClick={() => history.push("/")} to='learn'smooth={true} duration={500} spy={true} exact='true' offset={-80}>Learning Center</NavLinks>
+              <NavLinks onClick={() => history.push("/")} to='learn' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Learning Center</NavLinks>
               <NavLinks onClick={() => history.push("/")} to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Software Solution</NavLinks>
             </NavX>
     )}

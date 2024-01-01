@@ -3,11 +3,13 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react
 import { FooterContainer, FooterWrap, FooterLinkWrapper, FooterLinkItems, FooterLinkContainer, FooterLinkTitle, FooterLink, SocialIconLink, SocialIcons, SocialLogo, 
   SocialMedia, SocialMediaWrap, WebsiteRights, FooterLinkS, FooterLinkA } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
   }
+  const history = useHistory();
 
   return (
     <FooterContainer>
@@ -16,17 +18,23 @@ const Footer = () => {
           <FooterLinkWrapper>
             <FooterLinkItems>
               <FooterLinkTitle> Company </FooterLinkTitle>
-                <FooterLinkS to='about' smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</FooterLinkS>
-                <FooterLinkS to='discover' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Discover</FooterLinkS>
-                <FooterLinkS to='why-us' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Why Us</FooterLinkS>
-                <FooterLinkS to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</FooterLinkS>
+                <FooterLinkS to='about'  onClick={() => history.push("/")} smooth={true} duration={500} spy={true} exact='true' offset={-80}>About Us</FooterLinkS>
+                <FooterLinkS to='discover'  onClick={() => history.push("/")} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Discover</FooterLinkS>
+                <FooterLinkS to='why-us'  onClick={() => history.push("/")} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Why Us</FooterLinkS>
+                <FooterLinkS to='contact'  onClick={() => history.push("/")} smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</FooterLinkS>
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle> Services </FooterLinkTitle>
-                <FooterLink to='/'>Software Services</FooterLink>
-                <FooterLink to='/'> Private Service </FooterLink>
-                <FooterLink to='/'>Cloud services</FooterLink>
-                <FooterLink to='/'> SDK & API Products </FooterLink>
+                <FooterLink to='/software_solution/software_service'>Software Services</FooterLink>
+                <FooterLink to='/software_solution/web_service'>Website Services</FooterLink>
+                <FooterLink to='/software_solution/private_service'> Private Service </FooterLink>
+            </FooterLinkItems>
+            <FooterLinkItems>
+            <FooterLinkTitle>  </FooterLinkTitle>
+            <FooterLinkTitle>  </FooterLinkTitle>
+            <FooterLink to='/software_solution/sdk&api_service'> SDK & API Products </FooterLink>
+            <FooterLink to='/software_solution/mobile_app_development'>Mobile Application</FooterLink>
+            <FooterLink to='/software_solution/cloud_service'>Cloud services</FooterLink>
             </FooterLinkItems>
           </FooterLinkWrapper>
 

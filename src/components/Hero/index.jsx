@@ -19,7 +19,7 @@ const Hero = () => {
         <HeroH1> Software Solutions Made Easy! </HeroH1>
         <HeroP>Grow and Expand your business with Next Future Technologies! </HeroP>
         <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'               
+          <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'               
           smooth={true} duration={500} spy={true} exact='true' offset={-80}>
             Get Started {hover ? <ArrowForward /> : <ArrowRight/>}
           </Button>

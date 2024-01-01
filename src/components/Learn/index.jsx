@@ -1,17 +1,15 @@
 import React from 'react'
-import {LContainer, LH1, LWrapper, LCard, LIcon, LInfo, LH2,LH3} from './LearncenterElements'
+import {LContainer, LH1, LWrapper, LCard, LIcon, LH2,LH3} from './LearncenterElements'
 
 const Learn = () => {
-
   return (
     <LContainer id='learn'>
       <LH1>Learning Center
       </LH1>
       <LWrapper>
-        <LCard >
+        <LCard>
           <LIcon src={'/images/c.png'}/>
           <LH3>C/C++</LH3>
-          <LInfo>additional</LInfo>
         </LCard>
         <LCard>
         <LIcon src={'/images/java.png'}/>
