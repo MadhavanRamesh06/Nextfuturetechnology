@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavX} from '../../../components/Navbar/NavbarElements'
 import Servicetype from '../../../components/Servicetype'
-import { acc_software, attandance_software, cctv, central_monitoring, college_management, crew_management, erp_software, ml_develpment, school_management, ship_management, traffic_monitoring, voyage_management } from '../../../components/Servicetype/Data'
+import { acc_software, attandance_software, cctv, central_monitoring, college_management, crew_management, erp_software, school_management, ship_management, traffic_monitoring, voyage_management } from '../../../components/Servicetype/Data'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
@@ -68,7 +68,6 @@ const SoftwareSecPage = () => {
       <Servicetype {...ship_management}/>
       <Servicetype {...crew_management}/>
       <Servicetype {...voyage_management}/>
-      <Servicetype {...ml_develpment}/>
       <Contact/>
       <Footer />
     </>

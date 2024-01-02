@@ -59,10 +59,10 @@ const PrivateSecPage = () => {
       </IconContext.Provider>
       <Servicetype {...programming}/>
       <Servicetype {...it_support}/>
-      <Servicetype {...cyber_security}/>
       <Servicetype {...construct_contract}/>
-      <Servicetype {...electrical}/>
+      <Servicetype {...cyber_security}/>
       <Servicetype {...access_control}/>
+      <Servicetype {...electrical}/>
       <Servicetype {...sale_cctv}/>
       <Contact/>
       <Footer />
