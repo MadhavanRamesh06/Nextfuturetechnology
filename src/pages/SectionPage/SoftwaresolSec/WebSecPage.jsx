@@ -9,7 +9,7 @@ import { web_dev, web_dns, web_host } from '../../../components/Servicetype/Data
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
 
-const WebSecPage = ({data}) => {
+const WebSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
   
   const toggle = () =>{

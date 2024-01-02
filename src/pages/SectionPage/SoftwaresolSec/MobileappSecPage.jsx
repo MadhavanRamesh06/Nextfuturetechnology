@@ -9,7 +9,7 @@ import { mobile_app } from '../../../components/Servicetype/Data'
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
 
-const MobileappSecPage = ({data}) => {
+const MobileappSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
   
   const toggle = () =>{

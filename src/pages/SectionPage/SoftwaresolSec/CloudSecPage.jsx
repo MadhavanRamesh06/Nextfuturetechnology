@@ -9,7 +9,7 @@ import { app_monitoring_sol, maintain_server } from '../../../components/Service
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
 
-const CloudSecPage = ({data}) => {
+const CloudSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
   
   const toggle = () =>{

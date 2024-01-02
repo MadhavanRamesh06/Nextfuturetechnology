@@ -9,7 +9,7 @@ import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 import Sidebar from '../../../components/SideBar'
 import Contact from '../../../components/Contact'
 
-const SdkSecPage = ({data}) => {
+const SdkSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
   
   const toggle = () =>{
