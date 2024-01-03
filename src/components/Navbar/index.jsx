@@ -28,31 +28,36 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   }
+  const fun=()=>{
+    toggleHome();
+    history.push("/")
+
+  }
 
   return (
     <>
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/'  src={'/images/Main-Logo.svg'} onClick={toggleHome}/>
+          <NavLogo to='/'  src={'/images/Main-Logo.svg'} onClick={fun}/>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks onClick={() => history.push("/")} to='about'  
+              <NavLinks onClick={() => history.push("/about")} to='about'  
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >About</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to='why-us'  onClick={() => history.push("/")}
+              <NavLinks to='why-us'  onClick={() => history.push("/whyus")}
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >Why Us</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to='contact'  onClick={() => history.push("/")}
+              <NavLinks to='contact'
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >Contact</NavLinks>
             </NavItem>
