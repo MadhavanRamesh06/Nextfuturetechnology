@@ -45,15 +45,9 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks onClick={() => history.push("/about")} to='about'  
+              <NavLinks onClick={() => history.push("/")}
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >About</NavLinks>
-            </NavItem>
-
-            <NavItem>
-              <NavLinks to='why-us'  onClick={() => history.push("/whyus")}
-              smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >Why Us</NavLinks>
+              >Home</NavLinks>
             </NavItem>
 
             <NavItem>

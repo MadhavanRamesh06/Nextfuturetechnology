@@ -13,17 +13,12 @@ import JavaSecPage from './pages/SectionPage/Learnsec/JavaSecPage';
 import PythonSecPage from './pages/SectionPage/Learnsec/PythonSecPage';
 import MlSecPage from './pages/SectionPage/Learnsec/MlSecPage';
 import AiSecPage from './pages/SectionPage/Learnsec/AiSecPage';
-import WhyUsSecPage from './pages/SectionPage/NavSec/WhyUsSec';
-import AboutSecPage from './pages/SectionPage/NavSec/AboutSec';
 function App() {
-
+  
   return (
     <Router>
       <Switch>
         <Route path='/' component={Home} exact />
-        <Route path='/about'  exact ><AboutSecPage/></Route>
-        <Route path='/whyus'  exact ><WhyUsSecPage/></Route>
-
         <Route path='/software_solution/software_service' exact> <SoftwareSecPage /> </Route>
         <Route path='/software_solution/web_service' exact><WebSecPage/> </Route>
         <Route path='/software_solution/private_service' exact> <PrivateSecPage/> </Route>

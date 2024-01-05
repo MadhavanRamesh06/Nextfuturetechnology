@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarAccordian, AccordianDiv, AHeading } from './SidebarElements'
 import { RiArrowDownSLine, RiArrowUpSLine } from 'react-icons/ri'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Sidebar = ({isOpen,toggle}) => {
 
   const [open, setOpen ] = useState(false);
+  let history=useHistory()
+  const hometoggle=()=>{
+    toggle();
+    history.push('/');
+  }
 
   return (
     <SidebarContainer isOpen={isOpen}>
@@ -13,16 +19,15 @@ const Sidebar = ({isOpen,toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to='why-us' onClick={toggle}>Why Us</SidebarLink>
+          <SidebarLink onClick={hometoggle}>Home</SidebarLink>
+          <SidebarLink to='contact' onClick={toggle}>Contact</SidebarLink>
           
           <SidebarAccordian>
             <AHeading onClick={() => setOpen(!open)}>  Services { open ? <RiArrowUpSLine />: <RiArrowDownSLine /> } </AHeading>
             { open ? 
             <AccordianDiv>
               <SidebarLink to='learn' onClick={toggle}>Learning Center</SidebarLink>
-              <SidebarLink to='services' onClick={toggle}>Software Services</SidebarLink>
+              <SidebarLink to='services' onClick={toggle}>Software Solutions</SidebarLink>
             </AccordianDiv> : null }
           </SidebarAccordian>
         </SidebarMenu>

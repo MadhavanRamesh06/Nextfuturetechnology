@@ -42,7 +42,7 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle>Social Media</FooterLinkTitle>
                 <FooterLinkA href='https://www.instagram.com/nextfuturetechnology/' target='_blank' arial-label='Instagram'>Instagram</FooterLinkA>
-                <FooterLinkA href='https://www.facebook.com/' target='_blank' arial-label='Facebook'>Facebook</FooterLinkA>
+                <FooterLinkA href='https://www.facebook.com/people/Next-Future-Technology/61555336047969/' target='_blank' arial-label='Facebook'>Facebook</FooterLinkA>
                 <FooterLinkA href='https://www.youtube.com/' target='_blank' arial-label='Youtube'>Youtube</FooterLinkA>
                 <FooterLinkA href='https://www.twitter.com/' target='_blank' arial-label='Twitter'>Twitter</FooterLinkA>
             </FooterLinkItems>
@@ -55,7 +55,7 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>Next Future Technologies © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' arial-label='Facebook'>
+              <SocialIconLink href='https://www.facebook.com/people/Next-Future-Technology/61555336047969/' target='_blank' arial-label='Facebook'>
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink href='https://www.instagram.com/nextfuturetechnology/' target='_blank' arial-label='Instagram'>

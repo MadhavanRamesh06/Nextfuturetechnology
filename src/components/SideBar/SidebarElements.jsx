@@ -8,7 +8,7 @@ export const SidebarContainer = styled.aside`
   z-index: 100;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,10 +48,10 @@ export const SidebarLink = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   list-style: none;
-  transition: 02s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-decoration: none;
   color: #fff;
   cursor: pointer;
@@ -95,7 +95,7 @@ export const AHeading = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   list-style: none;
   transition: 0.1s ease-in-out;
