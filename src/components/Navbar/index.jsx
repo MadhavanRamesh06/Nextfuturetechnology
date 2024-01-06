@@ -28,37 +28,41 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   }
-  const fun=()=>{
+  const hometoggle=()=>{
     toggleHome();
-    history.push("/")
-
+    history.push("/");
   }
+
+
 
   return (
     <>
     <IconContext.Provider value={{ color: '#fff'}}>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to='/'  src={'/images/Main-Logo.svg'} onClick={fun}/>
+          <NavLogo to='/'  src={'/images/Main-Logo.svg'} onClick={hometoggle}/>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks onClick={() => history.push("/")}
+              <NavLinks onClick={hometoggle}
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >Home</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to='contact'
+            <NavLinks to='about'
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >Contact</NavLinks>
+              >About us</NavLinks>
+            </NavItem>
+
+            <NavItem>
+              <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact Us</NavLinks>
             </NavItem>
 
             <NavItem className='dropdown'>
-              <NavLinks onClick={toggleDropdown} className='dropdown-button' 
-                smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
+              <NavLinks onClick={toggleDropdown} className='dropdown-button' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
               </NavItem>
             </NavMenu>
             {isOpen && (
