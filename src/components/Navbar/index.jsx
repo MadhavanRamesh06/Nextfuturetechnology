@@ -8,10 +8,13 @@ import { useHistory } from "react-router-dom";
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
+
   let history = useHistory();
+  const toggledrop= () =>{
+    history.push("/");
+    setIsOpen(!isOpen);
+    
+  }
 
   const changeNav = () => {
     if(window.scrollY >= 80) {
@@ -54,23 +57,22 @@ const Navbar = ({ toggle }) => {
             <NavItem>
             <NavLinks to='about'
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
-              >About us</NavLinks>
+              >About</NavLinks>
+            </NavItem>
+            <NavItem>
+            <NavLinks onClick={() => setIsOpen(!isOpen)} smooth={true} duration={500} spy={true} exact='true' offset={-80}>  Services</NavLinks>
             </NavItem>
 
             <NavItem>
               <NavLinks to='contact' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact Us</NavLinks>
             </NavItem>
-
-            <NavItem className='dropdown'>
-              <NavLinks onClick={toggleDropdown} className='dropdown-button' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
-              </NavItem>
             </NavMenu>
-            {isOpen && (
-            <NavX>
-              <NavLinks onClick={() => history.push("/")} to='learn' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Learning Center</NavLinks>
-              <NavLinks onClick={() => history.push("/")} to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Software Solution</NavLinks>
-            </NavX>
-    )}
+            {isOpen ? 
+            (<NavX>
+              <NavLinks onClick={toggledrop} to='learn' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Learning Center{ isOpen ? toggle:null }</NavLinks>
+              <NavLinks onClick={toggledrop} to='services' smooth={true} duration={500} spy={true} exact='true' offset={-80}>Software Solution{ isOpen ? toggle:null }</NavLinks>
+            </NavX>)
+    :null}
         
           
         </NavbarContainer>
