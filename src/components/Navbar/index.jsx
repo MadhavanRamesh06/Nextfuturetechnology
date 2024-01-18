@@ -55,7 +55,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
 
             <NavItem>
-            <NavLinks to='about'
+            <NavLinks to='about' onClick={() => history.push('/')}
               smooth={true} duration={500} spy={true} exact='true' offset={-80}
               >About</NavLinks>
             </NavItem>

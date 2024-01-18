@@ -26,8 +26,8 @@ const Sidebar = ({isOpen,toggle}) => {
             <AHeading onClick={() => setOpen(!open)}>  Services { open ? <RiArrowUpSLine />: <RiArrowDownSLine /> } </AHeading>
             { open ? 
             <AccordianDiv>
-              <SidebarLink to='learn' onClick={toggle}>Learning Center</SidebarLink>
-              <SidebarLink to='services' onClick={toggle}>Software Solutions</SidebarLink>
+              <SidebarLink to='learn' onClick={hometoggle}>Learning Center</SidebarLink>
+              <SidebarLink to='services' onClick={hometoggle}>Software Solutions</SidebarLink>
             </AccordianDiv> : null }
           </SidebarAccordian>
         </SidebarMenu>
