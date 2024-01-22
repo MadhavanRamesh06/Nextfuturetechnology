@@ -1,6 +1,5 @@
 import React, {  useState ,useEffect} from 'react'
 import Footer from '../../../components/Footer'
-import Servicetype from '../../../components/Servicetype'
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
 import { java } from '../../../components/Learn/Data'
@@ -9,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavX } from '../../../components/Navbar/NavbarElements'
+import LType from '../../../components/Learn/LearnSec'
 
 const JavaSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
@@ -79,7 +79,7 @@ const JavaSecPage = () => {
        
       </Nav>
       </IconContext.Provider>
-      <Servicetype {...java}/>
+      <LType{...java}/>
       <Contact/>
       <Footer />
     </>

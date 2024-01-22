@@ -1,6 +1,5 @@
 import React, {  useState ,useEffect} from 'react'
 import Footer from '../../../components/Footer'
-import Servicetype from '../../../components/Servicetype'
 import Contact from '../../../components/Contact'
 import Sidebar from '../../../components/SideBar'
 import { python } from '../../../components/Learn/Data'
@@ -9,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavX } from '../../../components/Navbar/NavbarElements'
+import LType from '../../../components/Learn/LearnSec'
 
 const PythonSecPage = () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
@@ -78,7 +78,7 @@ const PythonSecPage = () => {
        
       </Nav>
       </IconContext.Provider>
-      <Servicetype {...python}/>
+      <LType{...python}/>
       <Contact/>
       <Footer />
     </>

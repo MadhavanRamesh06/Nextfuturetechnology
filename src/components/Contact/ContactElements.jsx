@@ -6,6 +6,7 @@ export const ContactContainer = styled.div`
     z-index: 1;
     width: 100%;
     max-width: 1100px;
+    background:f9f9f9;
     margin: 50px auto;
     padding: 25px;
     justify-content: center;

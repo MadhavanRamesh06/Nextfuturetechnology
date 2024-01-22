@@ -1,7 +1,6 @@
 import React, {  useState ,useEffect} from 'react'
 import Footer from '../../../components/Footer'
 import Contact from '../../../components/Contact'
-import ServiceType from '../../../components/Servicetype'
 import Sidebar from '../../../components/SideBar'
 import { ml } from '../../../components/Learn/Data'
 import { animateScroll as scroll } from 'react-scroll'
@@ -9,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import { FaBars } from 'react-icons/fa'
 import {IconContext} from 'react-icons/lib'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavLinks, NavItem, NavX } from '../../../components/Navbar/NavbarElements'
+import LType from '../../../components/Learn/LearnSec'
 const  MlSecPage= () => {
   useEffect(() => {window.scrollTo(0, 0); }, []);
   const [scrollNav, setScrollNav] = useState(false);
@@ -77,8 +77,8 @@ const  MlSecPage= () => {
        
       </Nav>
       </IconContext.Provider>
-      <ServiceType{...ml}/>
-      <Contact/>
+      <LType{...ml}/>
+       <Contact/>
       <Footer />
     </>
   )

@@ -74,7 +74,7 @@ export const java = {
   lighttextDesc: true,
   topLine: '',
   headline: 'Learn Artificial inteligence',
-  description: ' AI is a rapidly growing field with increasing demand for skilled professionals. Learning AI can open up various job opportunities in industries such as healthcare, finance, manufacturing, and technology.',
+  description: 'Learning AI can open up various job opportunities in industries such as healthcare, finance, manufacturing, and technology.',
   description1: 'AI is at the forefront of technological innovation. By understanding AI concepts and techniques, you can contribute to creating cutting-edge solutions and advancements in various domains.',
   description2: 'AI can automate repetitive and mundane tasks, allowing individuals and organizations to focus on more creative and strategic activities. Learning AI can help you leverage automation to increase efficiency.',
   buttonLabel: 'Enquire Now',
