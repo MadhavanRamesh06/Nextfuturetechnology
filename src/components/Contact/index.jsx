@@ -70,7 +70,7 @@ const Contact = () => {
                 <ContactDetailDiv>
 
                     <ContactDetailTopDiv>
-                        <ContactInfoDiv style={{ cursor: 'pointer' }} target='_blank' href='https://www.google.com/maps/place/Marungai,+Tamil+Nadu+613501,+India/@10.7775921,79.1862413,2271m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3baab81aa33bccdd:0x8aa4de38efbd2ef4!8m2!3d10.7766149!4d79.1915325'>
+                        <ContactInfoDiv style={{ cursor: 'pointer' }} target='_blank' href='https://maps.app.goo.gl/ro8rvPQfTTqG7d4C8'>
                             <ContactHeaderDiv>
                                 <FaMapMarkerAlt />
                                 <ContactHeader> India Location </ContactHeader>
@@ -79,7 +79,7 @@ const Contact = () => {
                         </ContactInfoDiv>
                         <ContactInfoDiv>
                             <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:+918072022595"><FaMobileAlt/> +91 8072022595 </ContactInfo>
-                            <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:04362297330"> <FaPhoneAlt/> 04362 297330 </ContactInfo>
+                            <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:+9104362267330"> <FaPhoneAlt/> +91 04362-267330 </ContactInfo>
                         </ContactInfoDiv>
                         <WhatsAppBtn target='_blank' href='https://api.whatsapp.com/send/?phone=918072022595'> <FaWhatsapp /> India</WhatsAppBtn>
 
@@ -93,9 +93,8 @@ const Contact = () => {
                         <ContactInfoDiv>
                             <ContactInfo style={{ cursor: 'pointer' }} target='_blank' href="tel:+971523949324"><FaMobileAlt/> +971 52394 9324 </ContactInfo>
                         </ContactInfoDiv>
-                        <WhatsAppBtn target='_blank' href='https://api.whatsapp.com/send/?phone=971503973251'> <FaWhatsapp /> UAE</WhatsAppBtn>
+                        <WhatsAppBtn target='_blank' href='https://api.whatsapp.com/send/?phone=971523949324'> <FaWhatsapp /> UAE</WhatsAppBtn>
                     </ContactDetailTopDiv>
-
 
                     <ContactInfoDiv2 href='mailto:info@nextfuturetechnology.com'>
                         <ContactHeaderDiv style={{ cursor: 'pointer' }}>
